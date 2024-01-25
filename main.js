@@ -49,6 +49,13 @@ function deleteTask(index) {
   renderTasks();
 }
 
+function deleteFiveTasks() {
+if (tasks.length >= 5){
+  tasks.splice(0, 5);
+  renderTasks();
+}}
+
+
 function deleteAllTasks() {
   tasks = [];
   renderTasks();
